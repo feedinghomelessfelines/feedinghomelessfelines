@@ -1,0 +1,606 @@
+---
+layout: twodeep
+title: Feeding Homeless Felines Foundation Donate
+---
+<style>
+body{background: url(https://www.toptal.com/designers/subtlepatterns/patterns/subtle_white_feathers.png);}
+.container {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	padding: 50px 30px;
+	box-sizing: border-box;
+}
+
+header {
+	padding-bottom: 50px;
+
+	@media #{$desktop} {
+		.container {
+			display: flex;
+		}
+
+		.column {
+			flex: 1;
+
+			img {
+				max-width: none;
+				width: 120%;
+			}
+
+			&:first-child {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-right: 50px;
+			}
+		}
+	}
+
+	img {
+		margin: 100px auto 0 auto;
+		display: block;
+		max-width: 100%;
+	}
+}
+
+header, nav {
+	.container {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+.donate {
+	text-align: center;
+}
+
+nav .button {
+	position: absolute;
+	right: 35px;
+	top: 4px;
+}
+
+.thirds {
+	@media #{$desktop} {
+		display: flex;
+	}
+	margin: 90px -15px 0 -15px;
+	padding: 0;
+	list-style: none;
+
+	li {
+		box-sizing: border-box;
+		margin: 70px 0px;
+		width: 100%;
+		border: 1px solid #dfdfdf;
+		border-radius: 3px;
+		padding: 0 30px 25px 30px;
+		@media #{$desktop} {
+			width: 33%;
+			margin: 0 15px;
+		}
+
+		text-align: center;
+
+		.image {
+			display: inline-block;
+			line-height: 0;
+			background: white;
+			margin-top: -40px;
+			padding: 10px;
+			box-shadow: 2px 7px 39px 9px #f7f7f7;
+			border-radius: 50px;
+		}
+
+		p {
+			font-size: 1.1rem;
+		}
+
+		svg {
+			fill: $brand-color;
+			padding: 5px;
+		}
+	}
+}
+blockquote {
+	padding: 0;
+	margin: 120px 0 70px 0;
+	position: relative;
+
+	.quote {
+		padding: 30px 50px;
+		max-width: 500px;
+		margin: 0 auto;
+		border-radius: 3px;
+		position: relative;
+		font-size: 1.3em;
+		text-align: center;
+		box-shadow: 0 20px 100px 0 rgba(0,0,0,0.1);
+		color: #000;
+		font-style: italic;
+
+		&::before {
+			content: "\201C";
+			font-family: Georgia, serif;
+
+			font-size: 90px;
+			font-weight: bold;
+			color: $brand-color;
+
+			position: absolute;
+			left: 0;
+			top: -6px;
+			text-align: center;
+			width: 100%;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -30px;
+			left: 50%;
+			margin-left: -30px;
+			border-width: 30px 30px 0;
+			border-style: solid;
+			border-color: #ffffff transparent;
+			display: block;
+			width: 0;
+		}
+	}
+
+	.meta {
+		text-align: center;
+		vertical-align: middle;
+		position: relative;
+		z-index: 999;
+		top: 35px;
+
+		.author {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 0 0 10px;
+		}
+	}
+
+	.image {
+		display: inline-block;
+		width: 70px;
+		margin: 0 0 0 15px;
+		vertical-align: middle;
+		img {
+			max-width: 100%;
+			border-radius: 200px;
+		}
+	}
+}
+
+.newsletter {
+	padding: 100px 0;
+}
+
+footer {
+	background: #000;
+
+	padding: 40px 0;
+
+	&, a {
+		color: #8e8e8e;
+	}
+
+	a:hover {
+		color: #fff;
+
+		svg {
+			fill: #fff;
+		}
+	}
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
+
+	p, address {
+		font-size: .9em;
+	}
+
+	svg {
+		fill: #8e8e8e;
+		height: 20px;
+		position: relative;
+		top: 4px;
+	}
+
+	a {
+		text-decoration: none;
+
+		svg:hover {
+			fill: #fff;
+		}
+	}
+
+	.container {
+		@media #{$desktop} {
+			display: flex;
+			align-items: center;
+		}
+		div {
+			@media #{$desktop} {
+				width: 33%;
+				margin: 0;
+			}
+			margin: 20px 0;
+			box-sizing: content-box;
+			padding: 0 25px;
+
+		}
+	}
+}
+
+.copyright {
+	padding: 5px 0;
+	margin: 0;
+	background: #000;
+	text-align: center;
+	font-size: .8em;
+	a {
+		color: #8e8e8e;
+		text-decoration: none;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+.posts {
+	@media #{$desktop} {
+		display: flex;
+	}
+	margin: 0 -20px;
+	.post {
+		flex: 1;
+		border: 1px solid #eee;
+		margin: 0 0 50px 0;
+		background: #fff;
+		border-radius: 3px;
+
+		@media #{$desktop} {
+			margin: 0 20px;
+		}
+
+
+		.image {
+			height: 200px;
+			background-position: center;
+			background-size: cover;
+			border-top-right-radius: 3px;
+			border-top-left-radius: 3px;
+		}
+
+		.post-content {
+			padding: 20px;
+		}
+
+		.date {
+			color: #ccc;
+			font-weight: bold;
+			font-size: 1.1rem;
+		}
+
+		h3 {
+			font-size: 1.5rem;
+		}
+
+		p {
+			font-size: 1.1rem;
+		}
+	}
+}
+
+.post-title {
+
+	h3 {
+		margin: 0;
+	}
+
+	.date {
+		padding: 0;
+		margin: 0;
+		font-size: .8em;
+		color: #888;
+	}
+}
+
+.editor-link {
+ 	display: none;
+	margin-top: 0;
+	.btn {
+		border: 0;
+		border-radius: 2px;
+		width: 100%;
+		max-width: 500px;
+		box-sizing: border-box;
+		font-size: 2rem;
+		text-decoration: none;
+		padding: 10px 15px;
+		margin: 0;
+		font-size: 18px;
+		cursor: pointer;
+		background-color: #f7e064;
+		color: #333;
+		box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+		&:hover {
+			background-color: #f4d525;
+			color: #333;
+		}
+	}
+
+}
+
+.cms-editor-active .editor-link {
+	display: block;
+}
+
+.columns {
+	@media #{$desktop} {
+		display: flex;
+		margin: 0 -30px;
+		align-items: center;
+		& > div {
+			flex: 1;
+			padding: 0 30px;
+		}
+	}
+
+	h2 {
+		text-align: left;
+	}
+}
+
+.darker {
+	background: #f8fafb;
+	padding: 60px 0;
+}
+
+#headerH1 { 
+    color:#f90 !important;
+    padding:5px 7px 5px 7px;
+    position: relative !important;
+    left: 50% !important;
+    transform:translate(-50%);
+    max-width: 95vw;
+
+}
+
+#headerp1 {
+    padding:5px 7px 5px 7px;
+    position: relative !important;
+    left: 50% !important;
+    transform:translate(-50%);
+    max-width: 95vw;
+}
+
+
+.tabs-header.basic-color-background {
+    background-color: #f90 !important;
+}
+</style>
+<header>
+    	<div>
+    	   
+				<h1 class="editable" id='headerH1'>Help Save Lives</h1>
+				<p class="editable" id='headerp1'>At Feeding Homeless Felines Foundation, Inc., <b>we are dedicated to providing food, shelter, spay/neuter, medical care and adoption services</b> to homeless felines in the State of Florida </p>
+				<!--<div class="button">-->
+				<!--	<a href="#donate">Donate Now</a>-->
+					<!--{{ site.data.routes.try }}-->
+				
+				<!--</div>-->
+			</div>
+    	<div class="container">
+		<div class="column">
+		    <div class="container" id="donate">
+            	<!--<h2 class="editable">Make a donation</h2>-->
+            	<div class="donate">
+	            	{{ site.donation_embed }}
+            	</div>
+    </div>
+		
+		</div>
+		<div class="column">
+			<img src="https://dl2.pushbulletusercontent.com/v6nkbrDBVt6CZLkQXSH6q60qFYL2TgYO/IMG_0282.JPG" alt="kitty">
+		</div>
+	</div>
+</header>
+<hr>
+<div class="container">
+    	<h1 style='padding:5px 7px 5px 7px;'>Donations Also Accepted by Check</h1>
+					<h3 style='padding:5px 7px 5px 7px;'>Donation by check only, <br>
+					made payable to: Feeding Homeless Felines Foundation 
+					<br>
+					Feeding Homeless Felines Foundation, Inc.
+					<br>
+C/O  Myles Tobin 
+<br>
+2263 sw. 37th Ave. 
+<br>
+Apt. 327
+<br>
+Miami, FL 33145 
+</h3>
+<!--	<h2 class="editable" style="text-align: center;">Why sheep need the vote</h2>-->
+<!--	Go to our [GitHub repository]({{ site.data.routes.repository }}).-->
+<!--Or read the section dedicated to [Frequently Asked Questions]({{ site.data.routes.faq }})-->
+
+
+
+<div class="post hentry" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" style='background-color:rgba(255,127,0,0.68) !important;padding:20px 24px !important;'>
+<meta content="2073823868316954487" itemprop="blogId">
+<meta content="9137113307406635602" itemprop="postId">
+<a name="9137113307406635602"></a>
+<h3 class="post-title entry-title" itemprop="name">
+Can't the Humane Society or ASPCA help?
+</h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<div class="post-body entry-content" id="post-body-9137113307406635602" itemprop="description articleBody">
+This posting is very important as it answers commonly asked questions about stray cats. I had the same questions and learned it's really the responsibility of a community, not the government or Humane Society to help these animals. That is why we need volunteers to continue our efforts to control the cat population. <br>
+<br>
+<span style="color: black;"><strong>1. Can't the Humane Society or ASPCA come out and rescue these cats?</strong></span><br>
+<br>
+<span style="color: red;"><strong>Answer:</strong></span> both of these organizations are private entities with different goals. The Humane Society does&nbsp;NOT go out to the community. Rather they accept a <u>very limited number of friendly, healthy pets</u> that owners surrender or can not care for. The Humane Society then will find a new home for that pet. <br>
+<br>
+The ASPCA, addresses a different problem--pets that are neglected or abused. ASPCA does wonderful work to rescue these animals, nurture and rehabilitate them.&nbsp; <br>
+<br>
+Neither organization goes out and traps outdoors cats and kittens.<br>
+<br>
+<span style="color: black;"><strong>2.&nbsp;Can't Miami-Dade&nbsp;Animal Services come out and trap and take these cats away?</strong></span><br>
+<br>
+<span style="color: red;"><strong>Answer:</strong></span> Animal Services, as a county-run operation funded by our taxes, only picks up dead or injured animals on public property. They do not trap stray cats (feral or friendly strays).<br>
+<br>
+However, Animal Services shelters will take in any animal, pet or strays. Since the shelter receives approximately 100 cats a day and due to limited space, friendly cats that are not adopted in five days are euthanized. So even if someone has to surrender their pet (dog or cat) because they are moving and the new condo does not accept pets, that dog or cat most likely will be put to sleep.<br>
+<br>
+<strong><span style="color: black;">Therefore it is really the responsibility of a community--both residents and businesses and condo associations to address the issue together.</span></strong>&nbsp; Unfortunately, there are no cat sanctuaries in Miami to relocate the cats to. Trapping any outdoor cats and "relocating" them to an island or park or any other location is illegal under Florida law. &nbsp;It is considered "dumping and abandoning" as it is known that cats will instinctively run away in search of their original "home" where they are likely to get injured, starve or get killed.<br>
+<br>
+The most effective solution is TNR---Trap, Neuter, Release.&nbsp; If an outdoor cat is feral or wild, it should be trapped, taken for sterilization, and released back to the outdoors.&nbsp; This limits new cats from joining the colony as cats are often territorial and this&nbsp;prevents cat population from growing. From there it's easy--just regular feedings and ensuring no cat is injured.<br>
+<br>
+more...
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<div class="post-footer-line post-footer-line-1"><span class="post-author vcard">
+exerpt by
+<span class="fn" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+<meta content="https://www.blogger.com/profile/13973563783461373986" itemprop="url">
+<a href="https://www.blogger.com/profile/13973563783461373986" rel="author" title="author profile">
+<span itemprop="name">Blog Sisters</span>
+</a>
+</span>
+</span>
+<span class="post-timestamp">
+
+<meta content="http://www.riverfrontcats.com/2010/10/cant-humane-society-or-aspca-help.html" itemprop="url">
+<a class="timestamp-link" href="http://www.riverfrontcats.com/2010/10/cant-humane-society-or-aspca-help.html" rel="bookmark" title="permanent link"><abbr class="published" itemprop="datePublished" title="2010-10-13T23:20:00-04:00"> </abbr></a>
+</span>
+<!--<span class="post-comment-link">-->
+<!--</span>-->
+<!--<span class="post-icons">-->
+<!--<span class="item-action">-->
+<!--<a href="https://www.blogger.com/email-post.g?blogID=2073823868316954487&amp;postID=9137113307406635602" title="Email Post">-->
+<!--<img alt="" class="icon-action" height="13" src="http://img1.blogblog.com/img/icon18_email.gif" width="18">-->
+<!--</a>-->
+<!--</span>-->
+<!--<span class="item-control blog-admin pid-1282932107">-->
+<!--<a href="https://www.blogger.com/post-edit.g?blogID=2073823868316954487&amp;postID=9137113307406635602&amp;from=pencil" title="Edit Post">-->
+<!--<img alt="" class="icon-action" height="18" src="https://resources.blogblog.com/img/icon18_edit_allbkg.gif" width="18">-->
+<!--</a>-->
+<!--</span>-->
+<!--</span>-->
+<!--<div class="post-share-buttons goog-inline-block">-->
+<!--<a class="goog-inline-block share-button sb-email" href="https://www.blogger.com/share-post.g?blogID=2073823868316954487&amp;postID=9137113307406635602&amp;target=email" target="_blank" title="Email This">-->
+<!--</div>-->
+<!--<span class="post-backlinks post-comment-link">-->
+<!--</span>-->
+</div>
+<div class="post-footer-line post-footer-line-2"><span class="post-labels">
+Labels:
+<a href="#" rel="tag">ASPCA</a>,
+<a href="#" rel="tag">Humane Society</a>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3"><span class="post-location">
+</span>
+</div>
+</div>
+</div>
+
+	<ul class="thirds">
+		<li>
+			<div class="image">{% include icons/site.html icon="population" %}</div>
+			<h3 class="editable">Feeding/Adoption</h3>
+			<p class="editable">We feed hundreds of cats each week in South Florida &amp; we search for and find suitable families in Florida and throughout the U.S. who are willing to make a homeless feline an integral part of their family. </p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="economy" %}</div>
+			<h3 class="editable">Spay/Neuter</h3>
+			<p class="editable">We continue to search out colonies of homeless felines , trap them and provide spay and neuter services, shots and necessary medical care. If they are adoptable, we’ll work to find them homes.  </p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="conditions" %}</div>
+			<h3 class="editable">Medical Services</h3>
+			<p class="editable">We care for and provide veterinary services for injured or sick  cats. Whether they’ve been slashed or bitten, broken bones or are suffering from afflictions, if we can trap them we’ll get them needed medical attention. </p>
+		</li>
+	</ul>
+</div>
+
+<div class="container">
+	<div class="columns">
+		<div>
+			<img src="https://dl2.pushbulletusercontent.com/uZqAiBksUq28sOOclH8bY0TdqcwfvYT3/IMG03.jpg" alt="kitten">
+		</div>
+		<div>
+			<h2 class="editable">Our Mission</h2>
+
+			<p class="editable">We are dedicated to providing food, shelter, spay/neuter, medical care and adoption services to homeless felines in the State of Florida </p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<hr>
+	<blockquote>
+		<!--<p class="quote editable">The ultimate measure of a sheep is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.</p>-->
+		<!--<div class="attribute">-->
+		<!--	<p class="meta">-->
+		<!--		<span class="image"><img class="editable" src="{{ site.baseurl }}/images/wooly.jpg" alt="Wooly"></span>-->
+		<!--		<span class="author editable"><strong>Wooly McBaa</strong></span>-->
+		<!--	</p>-->
+		<!--</div>-->
+		
+		
+	</blockquote>
+</div>
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">Join us</h2>
+		<p class="editable" style="text-align: center;">Sign up to hear the latest news and progress in our fight for the felines of Miami-Dade County.</p>
+		<form action="{{ site.newsletter_action }}" method="post">
+			<input type="text" name="EMAIL" placeholder="Email">
+			<input type="submit" value="Sign up"/>
+		</form>
+	</div>
+</div>
+
+
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">Updates</h2>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<div class="posts">
+			{% for post in site.posts %}
+				<div class="post">
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="post-content">
+						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+						<h3>{{ post.title }}</h3>
+
+						{{ post.content }}
+						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+<script src='theJs.js'>
+   
+</script>
