@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: thefhff.org/sitemap.xml
+Sitemap: celestial-gaur.cloudvent.net/sitemap.xml
